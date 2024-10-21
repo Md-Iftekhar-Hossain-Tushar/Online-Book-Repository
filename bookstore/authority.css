@@ -1,0 +1,188 @@
+/*common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+/* body{
+    background-image: linear-gradient(rgba(0, 2, 9, 0.7),
+            rgba(1, 5, 20, 0.7)), url(form_contents/form_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+.fullcontainer {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+
+
+/*common style end here */
+/*home style start*/
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .90);
+    position:static;
+    z-index: 2;
+    margin-bottom: 50px;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeRed);
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner h1 {
+    margin-top: 400px;
+    display: inline-block;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 80%;
+    line-height: 5rem;
+    font-weight: bold;
+
+
+
+}
+.banner p {
+    color: #fff;
+    width: 90%;
+    text-shadow: 0 0 3px #000;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+
+/*home style end here*/
+
+/*donors information starts here */
+
+.content-table
+{
+    position:static;
+    border-collapse: collapse;
+    font-size: .25cm;
+    margin: 30px 50px;
+    width:95%;
+    border-radius: 7.5px;
+    overflow: scroll;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+    table-layout:fixed;
+    
+}
+
+.content-table caption
+{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color:  rgb(99, 49, 16);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding :7px 10px ;
+}
+
+
+.content-table thead tr 
+{
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+
+}
+
+.content-table th,
+.content-table td 
+{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+    padding: 12px 15px;
+
+}
+.content-table th
+{
+    font-size: 15px;
+    background-color: rgba(181, 114, 69, 0.998);
+}
+.content-table td
+{
+    font-size: 12px;
+    
+}
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:nth-of-type(odd)
+{
+    background-color: #b8b7b7;
+}
+.content-table tbody tr:last-of-type
+{
+    border-bottom: 2px solid rgb(99, 49, 16);
+}
+
+/*donors information end here */
+
+/*donors information starts here */

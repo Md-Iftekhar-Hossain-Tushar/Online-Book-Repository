@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0, 2, 9, 0.7),
+            rgba(1, 5, 20, 0.7)), url(form_contents/form_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    font-size: 100%;
+}
+
+.fullcontainer {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+/*common style end here */
+/*home style start*/
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .90);
+    position: fixed;
+    z-index: 2;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themeRed);
+}
+
+main{
+    min-width: 300px;
+    width:100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:100px 50px;
+ 
+}
+
+main .card{
+    box-shadow: 7px 12px  rgba(148, 80, 34, 0.653);   
+    flex: 1 1 210px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    height:fit-content;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 20px;
+    overflow:auto;
+    background-color: rgba(214, 181, 157, 0.653);
+}
+
+/* main .card .image{
+    height: 45%;
+} */
+
+main .card .image img{
+    height: 350px;
+    width: 100%;
+    border: 2px solid rgb(145, 87, 24);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-end-start-radius: 25px;
+}
+
+main .card .caption{
+    padding-top: 10px;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    text-align: left;
+    height: 20%;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+
+}
